@@ -20,7 +20,7 @@ const Posts = (props) => {
             onChange: page => {
                 console.log(page);
             },
-            pageSize: 3,
+            pageSize: 2,
             }}
             dataSource={props.data}
             renderItem={item => (
