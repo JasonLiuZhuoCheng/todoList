@@ -29,7 +29,7 @@ class PostList extends React.Component {
                     requestType="post"
                     articleId={null}
                     btnText="Create Post">
-                    </CustomForm>
+                </CustomForm>
             </div>
         )
     }
