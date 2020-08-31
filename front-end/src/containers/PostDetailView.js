@@ -23,7 +23,7 @@ class PostDetail extends React.Component {
     handleDelete = (event) => {
         const postID = this.props.match.params.postID
         axios.delete(`https://todo-list-django-react.herokuapp.com/api/${postID}/`)
-        this.props.history.push('/')
+        this.props.history.push('/posts')
         this.forceUpdate()
     }
 
