@@ -11,7 +11,7 @@ class PostDetail extends React.Component {
 
     componentDidMount() {
         const postID = this.props.match.params.postID
-        axios.get(`http://127.0.0.1:8000/api/${postID}/`)
+        axios.get(`https://todo-list-django-react.herokuapp.com/api/${postID}/`)
             .then(res => {
                 console.log(res)
                 this.setState({
@@ -22,7 +22,7 @@ class PostDetail extends React.Component {
     }
     handleDelete = (event) => {
         const postID = this.props.match.params.postID
-        axios.delete(`http://127.0.0.1:8000/api/${postID}/`)
+        axios.delete(`https://todo-list-django-react.herokuapp.com/api/${postID}/`)
         this.props.history.push('/')
         this.forceUpdate()
     }

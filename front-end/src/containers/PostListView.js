@@ -11,7 +11,7 @@ class PostList extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://127.0.0.1:8000/api/')
+        axios.get('https://todo-list-django-react.herokuapp.com/api/')
             .then(res => {
                 this.setState({
                     posts: res.data

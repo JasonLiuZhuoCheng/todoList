@@ -31,7 +31,7 @@ class CustomForm extends React.Component {
      console.log(event)
      switch (requestType) {
          case 'post':
-            return axios.post('http://127.0.0.1:8000/api/', {
+            return axios.post('https://todo-list-django-react.herokuapp.com/api/', {
                 title: title,
                 content: content,
                 description: description
@@ -39,7 +39,7 @@ class CustomForm extends React.Component {
             .then(window.location.reload(false))
             .catch(err => console.log(err))
          case 'put':
-            return axios.put(`http://127.0.0.1:8000/api/${postId}/`, {
+            return axios.put(`https://todo-list-django-react.herokuapp.com/api/${postId}/`, {
                 title: title,
                 content: content,
                 description: description
