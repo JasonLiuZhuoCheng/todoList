@@ -10,7 +10,7 @@ const BaseRouter = () => (
         <Route exact path='/posts/:postID/' component={PostDetail} />
         <Route exact path="/login/" component={Login} />
         <Route exact path= '/' component={Login} />
-        <Route exact path= '/posts' component={PostList} />
+        <Route exact path= '/posts/' component={PostList} />
         <Route exact path="/signup/" component={Signup} />
     </div>
 );
